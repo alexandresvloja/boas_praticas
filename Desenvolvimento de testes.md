@@ -34,7 +34,7 @@ Assim, o fluxo para implementar algum _Service_, é criar uma _Interface_ em _Se
 * Realizar uma análise e dimensionar quais DTOs, métodos e outros requisitos são necessários
 
 #### 3.2 Criação dos DTOs (se necessário)
-* Criar uma pasta (caso não existe) referente ao serviço
+* Criar uma pasta (caso não exista) referente ao serviço
 * Dentro da pasta, criar todas as classes necessárias para o uso do _Service_
 * Nomeclatura
     * Nome do objeto com sufixo DTO
@@ -176,7 +176,7 @@ namespace ServeLoja.Business.Implementations.Tests
     }
 }
 ```
-##### 3.3.3.4 Estrutura da Soluction
+##### 3.3.3.4 Estrutura da Solution
 [imagem06]: https://image.ibb.co/fu1gXe/6.png "Estrutua da Soluction"
 ![alt text][imagem06]
 
