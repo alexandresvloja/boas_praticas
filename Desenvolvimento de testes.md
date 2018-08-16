@@ -25,7 +25,7 @@ Essa ferramenta permite a geração de testes com o padrão Microsoft ou NUnit
 5. ServeLoja.DTO
     * Contém os objetos de transferência
 
-Assim, o fluxo para implementar algum _Service_, é criar uma _Interface_ em _ServeLoja.Service_, implemetá-la em _ServeLoja.Business_ e disponibilizá-lo em _ServeLoja.Api_
+Assim, o fluxo para implementar algum _Service_ é criar uma _Interface_ em _ServeLoja.Service_, implemetá-la em _ServeLoja.Business_ e disponibilizá-lo em _ServeLoja.Api_
 
 #### 3. Exemplo de teste
 * Demanda: Desenvolver um CRUD para a entidade __TB_PARAMETRO__
@@ -36,7 +36,7 @@ Assim, o fluxo para implementar algum _Service_, é criar uma _Interface_ em _Se
 #### 3.2 Criação dos DTOs (se necessário)
 * Criar uma pasta (caso não exista) referente ao serviço
 * Dentro da pasta, criar todas as classes necessárias para o uso do _Service_
-* Nomeclatura
+* Nomenclatura
     * Nome do objeto com sufixo DTO
     * Parametro + DTO
     * ParametroDTO
@@ -53,7 +53,7 @@ namespace ServeLoja.DTO.Parametro
 }
 ```
 #### 3.2 Criação da _Interface_
-* Nomeclatura
+* Nomenclatura
     * Criar uma classe com o nome do serviço, com prefixo I e sufixo Service
     * I + Parametro + Service
     * IParametroService
@@ -67,7 +67,7 @@ namespace ServeLoja.Service.Interfaces
         /// <summary>
         /// Realiza o cadastro do parâmetro em TB_PARAMETRO
         /// </summary>
-        /// <param name="parametro">Dados completo do parâmetro</param>
+        /// <param name="parametro">Dados completos do parâmetro</param>
         void CadastrarParametro(ParametroDTO parametro);
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace ServeLoja.Service.Interfaces
         /// <summary>
         /// Realiza a atualização do parâmetro
         /// </summary>
-        /// <param name="parametro">Dados completo do parâmetro</param>
+        /// <param name="parametro">Dados completos do parâmetro</param>
         void AtualizarParametro(ParametroDTO parametro);
 
         /// <summary>
@@ -93,14 +93,14 @@ namespace ServeLoja.Service.Interfaces
 ```
 
 #### 3.3 Implementação da _Interface_
-* Nomeclatura
+* Nomenclatura
     * Criar uma classe com o mesmo nome da interface, sem o prefixo I e com sufixo Service
     * Parametro + Service
     * ParametroService
 
-##### 3.3.1 Realizar o AutoGenereted dos métodos
+##### 3.3.1 Executar o autogenerate dos métodos
 
-[imagem03]: https://image.ibb.co/bLQuJK/3.png "Realizar o AutoGenereted dos métodos"
+[imagem03]: https://image.ibb.co/bLQuJK/3.png "Executar o autogenerate dos métodos"
 ![alt text][imagem03]
 
 ##### 3.3.2 Classe Gerada
@@ -133,14 +133,14 @@ namespace ServeLoja.Business.Implementations
 }
 ```
 
-##### 3.3.3 Realizar o AutoGenereted de testes
+##### 3.3.3 Executar o autogenerate de testes
 
 ##### 3.3.3.1
-[imagem04]: https://image.ibb.co/fPzJCe/4.png "Realizar o AutoGenereted de testes"
+[imagem04]: https://image.ibb.co/fPzJCe/4.png "Executar o autogenerate de testes"
 ![alt text][imagem04]
 
 ##### 3.3.3.2
-[imagem05]: https://image.ibb.co/jPxS5z/5.png "Realizar o AutoGenereted de testes"
+[imagem05]: https://image.ibb.co/jPxS5z/5.png "Executar o autogenerate de testes"
 ![alt text][imagem05]
 
 ##### 3.3.3.3 Classe gerada
@@ -176,15 +176,15 @@ namespace ServeLoja.Business.Implementations.Tests
     }
 }
 ```
-##### 3.3.3.4 Estrutura da Solution
-[imagem06]: https://image.ibb.co/fu1gXe/6.png "Estrutua da Soluction"
+##### 3.3.3.4 Estrutura da solution
+[imagem06]: https://image.ibb.co/fu1gXe/6.png "Estrutura da solution"
 ![alt text][imagem06]
 
 #### 3.3 Validando os testes 
 
-#### 3.3.1 Build o projeto
+#### 3.3.1 Executar build do projeto
 
-[imagem07]: https://image.ibb.co/g6Btvz/7.png "Build o projeto"
+[imagem07]: https://image.ibb.co/g6Btvz/7.png "Execução de build do projeto"
 ![alt text][imagem07]
 
 #### 3.3.2 Abrir a barra de testes (_Test Explorer_)
@@ -242,7 +242,7 @@ namespace ServeLoja.Business.Implementations.Tests
 
 #### 3.3.3.1 _Test Explorer_ atualizado
 
-[imagem09]: https://image.ibb.co/efMtvz/9.png "Barra de testes atualizado"
+[imagem09]: https://image.ibb.co/efMtvz/9.png "Barra de testes atualizada"
 ![alt text][imagem09]
 
 #### 3.3.4 Executando todos os testes (inicialmente todos falharão)
@@ -273,7 +273,7 @@ public ParametroDTO ObterParametroPorId(long id)
 }
 ```
 
-#### 3.3.5.2 Vaidação do método ObterParametroPorId
+#### 3.3.5.2 Validação do método ObterParametroPorId
 ```cs
 [TestCategory("ParametroService")]
 [TestMethod()]
@@ -303,4 +303,3 @@ public void ObterParametroPorIdCustomMessageExceptionTest()
 
 [imagem12]: https://image.ibb.co/jtpA8K/11.png "Executando todos os testes"
 ![alt text][imagem12]
-
